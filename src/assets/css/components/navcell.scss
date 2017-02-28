@@ -1,0 +1,52 @@
+.nav-item {
+  flex: 1;
+  font-size: 14px;
+  text-align: center;
+  padding:10px 0;
+  color: #7f8a97;
+  .box {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    .icon {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-size: cover;
+      .msg-icon {
+        position: absolute;
+        left: -9px;
+        top: -10px;
+        width: 21px;
+        height: 18px;
+        line-height: 12px;
+        // display: block;
+        background-image: url(/static/img/tips_icon.png);
+        background-size: cover;
+        font-size: 10px;
+        color: #fff;
+      }
+    }
+    .icon1 {
+      width: 25px;
+      height: 25px;
+      background-image: url(/static/img/icon1.png);
+    }
+    .icon2 {
+      width: 27px;
+      height: 25px;
+      background-image: url(/static/img/icon2.png);
+    }
+    .icon3 {
+      width: 31px;
+      height: 21px;
+      background-image: url(/static/img/icon3.png);
+    }
+    .icon4 {
+      width: 27px;
+      height: 23px;
+      background-image: url(/static/img/icon4.png);
+    }
+  }
+}

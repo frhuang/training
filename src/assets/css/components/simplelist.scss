@@ -1,0 +1,240 @@
+@import "../mixin";
+.simplelist {
+  &.unfolded {
+    background: $list-bg-color;
+    .left-bg{
+      position: relative;
+      &:after {
+        content: " ";
+        position: absolute;
+        left: 50%;
+        overflow: hidden;
+        width: 30px;
+        height: 1px;
+        top: 41px;
+        margin-left: -1px;
+        border-bottom: 1px solid #d9d9d9;
+        transform-origin: 0 100%;
+        transform: scaleY(.5) rotate(90deg);
+      }
+    }
+    .main-box:after {
+      width: 0;
+    }
+  }
+}
+.main-box {
+  display: flex;
+  padding: 15px 0;
+  position: relative;
+  &:after {
+      content: " ";
+      position: absolute;
+      left: 20%;
+      overflow: hidden;
+      width: 80%;
+      height: 1px;
+      color: #d9d9d9;
+      bottom: 0;
+      border-bottom: 1px solid #d9d9d9;
+      transform-origin: 0 100%;
+      transform: scaleY(.5);
+  }
+}
+.list-box{
+  // transition: all 0.5s ease;
+  padding-bottom: 10px;
+}
+
+.simple-item {
+  display: flex;
+  padding: 15px 0;
+  position: relative;
+  .item-icon {
+    display: block;
+    margin: 0 auto;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+  }
+  &.item-cc {
+    .item-icon {
+      position: relative;
+      &:after {
+        content: " ";
+        position: absolute;
+        left: 50%;
+        overflow: hidden;
+        width: 30px;
+        height: 1px;
+        top: 18px;
+        margin-left: -1px;
+        border-bottom: 1px solid #d9d9d9;
+        transform-origin: 0 100%;
+        transform: scaleY(.5) rotate(90deg);
+      }
+      &:before {
+        content: " ";
+        position: absolute;
+        left: 50%;
+        overflow: hidden;
+        width: 30px;
+        height: 1px;
+        top: -18px;
+        margin-left: -1px;
+        border-bottom: 1px solid #d9d9d9;
+        transform-origin: 0 100%;
+        transform: scaleY(.5) rotate(90deg);
+      }
+    }
+  }
+  .item-icon1, .item-icon2 {
+    background-image: url(/static/img/icon7.png)
+  }
+  .item-icon3 {
+    background-image: url(/static/img/icon8.png)
+  }
+  .item-icon4 {
+    background-image: url(/static/img/icon9.png)
+  }
+  .item-left {
+    text-align: center;
+  }
+  .item-center {
+    color: $title-color;
+    font-size: 14px;
+    .lesson {
+      color: $dec-color;
+      font-size: 13px;
+      font-weight: normal;
+      padding-left: 10px;
+    }
+  }
+  .right-percent {
+      width: $list-height;
+      height: $list-height;
+      position: absolute;
+      right: 2px;
+      top: 50%;
+      margin-top: -20px;
+  }
+  .item-right {
+    font-size: 12px;
+    color: $circle-color;
+  }
+}
+  .left-box {
+    flex: 1;
+    text-align: center;
+    .left-bg {
+      width: 42px;
+      height: 42px;
+      margin: auto;
+      
+      background-size: cover;
+      border-radius: 50%;
+    }
+    .type1 {
+      background-image: url(/static/img/icon5.png);
+    }
+    .type2 {
+      background-image: url(/static/img/icon6.png);
+    }
+  }
+  .center-box {
+    flex: 4;
+    
+  }
+  .right-box {
+    flex: 1;
+    text-align: center;
+   
+  };
+    .left-title {
+      font-size: 14px;
+      color: $h3-color;
+    }
+    .left-down {
+      padding-top: 10px;
+      font-size: 10px;
+      color: $dec-color;
+      .dec {
+        padding-left: 20px;
+      }
+      .icon10 {
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        background: url(/static/img/icon10.png);
+        background-size: cover;
+        margin-right: 3px;
+      }
+      .icon11 {
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        background: url(/static/img/icon11.png);
+        background-size: cover;
+        margin-right: 3px;
+      }
+    }
+   .circle_wrap{
+      width: $list-height;
+      height: $list-height;
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      margin-top: -20px;
+      background: #fff;
+      .circle-0 {
+        width: $list-height - 2*$border-width;
+        height: $list-height - 2*$border-width;
+        border: $border-width solid $circle-color;
+        border-radius: 50%;
+        color: $circle-color;
+      }
+      .circle {
+        color: $circle-color;
+        .wrapper{
+            width: $list-height / 2;
+            height: $list-height;
+            position: absolute;
+            top:0;
+            overflow: hidden;
+        }
+        .right{
+          right:0;
+        }
+        .left{
+          left:0;
+        }
+        .circleProgress{
+          width: $list-height - 2*$border-width;
+          height: $list-height - 2*$border-width;
+          border: $border-width solid $circle-normal-color;
+          border-radius: 50%;
+          position: absolute;
+          top:0;
+        }
+        .rightcircle{
+          border-top: $border-width solid $circle-color;
+          border-right:$border-width solid $circle-color;
+          right:0;
+          transform: rotate(-135deg);
+          // transition: all 1s linear;
+        }
+        .leftcircle{
+          border-bottom: $border-width solid $circle-color;
+          border-left: $border-width solid $circle-color;
+          left:0;
+          transform: rotate(-135deg);
+          // transition: all 1s linear;
+        }
+
+      }
+      .circle-num {
+        font-size: 10px;
+        text-align: center;
+        line-height: $list-height;
+      }
+    }

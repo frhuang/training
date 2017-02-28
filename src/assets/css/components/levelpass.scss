@@ -1,0 +1,62 @@
+@import "../mixin";
+.pass-title {
+    padding: 15px 5px;
+    position: relative;
+    img {
+      width: 40px;
+      margin-right: 5px;
+    }
+  }
+
+  .pass-btn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    padding: 0 10px;
+    display: flex;
+    .abtn {
+      flex: 1;
+      display: block;
+      background: $pass-btn-color;
+      font-weight: bold;
+      color: #6883a1;
+      font-size: 13px;
+      text-align: center;
+      height: 30px;
+      line-height: 30px;
+      border-radius: 5px;
+      overflow: hidden;
+      position: relative;
+      &:hover {
+        background: $blue-color;
+        color: $white-color;
+      }
+    }
+    .btn-pre {
+      &:after {
+        content: " ";
+        position: absolute;
+        top: 0;
+        right: -5px;
+        width: 20px;
+        height: 50px;
+        background: #fff;
+        transform: rotate(30deg);
+        overflow: hidden;
+      }
+    }
+    .btn-next {
+      &:after {
+        content: " ";
+        position: absolute;
+        top: -10px;
+        left: -15px;
+        width: 20px;
+        height: 50px;
+        background: #fff;
+        transform: rotate(30deg);
+        overflow: hidden;
+      }
+    }
+  }

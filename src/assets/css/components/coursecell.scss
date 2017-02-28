@@ -1,0 +1,33 @@
+@import "../mixin";
+
+
+    .course-cell {
+      display: block;
+      margin-right: 8px;
+      h3 {
+        margin-top: 10px;
+        font-size: 13px;
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        word-break: keep-all;
+        max-width: 100%;
+        color: $h3-color;
+      }
+      p {
+        padding-top: 6px;
+        font-size: 10px;
+        color: #9da8b4;
+        overflow: hidden;
+        height: 16px;
+      }
+      .course-pic {
+        position: relative;
+        overflow: hidden;
+        border-radius: 2px;
+        img {
+          height: 106px;
+        }
+      }
+    }

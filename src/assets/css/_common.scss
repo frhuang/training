@@ -1,0 +1,84 @@
+@import "mixin";
+*{
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  font-family: "Microsoft YaHei";
+  background-color: #fff;
+  -webkit-overflow-scrolling: touch;
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  // line-height: 1;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+@font-face {
+  font-family: 'iconfont';  /* project id 147638 */
+  src: url('//at.alicdn.com/t/font_1475915421_823606.eot');
+  src: url('//at.alicdn.com/t/font_1475915421_823606.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1475915421_823606.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1475915421_823606.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1475915421_823606.svg#iconfont') format('svg');
+}
+.no-scroll {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.mb50 {
+  padding-bottom: 50px;
+}
+.mt40 {
+  margin-top: 40px;
+}
+.mt80 {
+  margin-top: 80px;
+}
+.mint-navbar .mint-tab-item.is-selected {
+  color: $nav-blue-color;
+  border: none;
+  position: relative;
+  &:after {
+    content: " ";
+    position: absolute;
+    left: 50%;
+    bottom: 3px;
+    width: 30px;
+    margin-left: -15px;
+    height: 3px;
+    background: $nav-blue-color;
+    border-radius: 3px;
+  }
+}
+.mint-navbar .mint-tab-item {
+    color: $tab-color;
+    font-weight: bold;
+} 
+.mint-navbar {
+  position: relative;
+  &:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 1px;
+    color: #d9d9d9;
+    bottom: 0;
+    border-bottom: 1px solid #d9d9d9;
+    transform-origin: 0 100%;
+    transform: scaleY(.5);
+  }
+}

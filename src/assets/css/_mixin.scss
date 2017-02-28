@@ -1,0 +1,37 @@
+$bg-color: #f0f4f8;
+$white-color: #ffffff;
+$h3-color: #34475b;
+$dec-color: #9da8b4;
+$tab-color: #8994a0;
+$title-color: #556576;
+$blue-color: #32a3fd;
+$header-color: #32a5fd;
+$border-color: #eef2f6;
+$circle-color: #2cdbb8;
+$circle-normal-color: #ecf7f5;
+$list-bg-color: #f7fbff;
+$nav-blue-color: #32a9fd;
+$yellow-light-color: #fdf9d7;
+$yellow-deep-color: #dead19;
+$pass-btn-color: #f5f7fa;
+$message-content-color: #73808e;
+$red-color: #ff5959;
+
+
+$list-height: 40px;
+$border-width: 2px;
+
+
+@mixin border-top($width: 0.5, $color: $border-color, $index: 0){
+    &:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        border-top: #{$width * 2}px solid $color;
+        transform: scaleY(.5);
+        z-index: $index;
+    }
+}

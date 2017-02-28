@@ -1,0 +1,47 @@
+@import "../mixin";
+
+.message-cell {
+  background: $white-color;
+  position: relative;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  .noread-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(/static/img/icon17.png);
+    width: 44px;
+    height: 21px;
+    background-size: cover;
+  }
+  .message-box {
+    padding: 12px;
+  }
+  .message-title {
+    color: $h3-color;
+    font-size: 15px;
+  }
+  .message-content {
+    color: $message-content-color;
+    padding: 15px 0;
+    font-size: 14px;
+    .saying {
+      color: $blue-color;
+    }
+  }
+  .create-time {
+    font-size: 12px;
+    color: $h3-color;
+  }
+  .little-title {
+    color: $dec-color;
+  }
+  .message-todo {
+    border-top: 1px dashed $border-color;
+    text-align: right;
+    line-height: 30px;
+    padding-right: 15px;
+    color: $dec-color;
+    font-size: 13px;
+  }
+}

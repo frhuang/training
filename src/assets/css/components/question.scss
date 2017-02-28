@@ -1,0 +1,45 @@
+@import "../mixin";
+.question-title {
+  padding: 15px 10px;
+  position: relative;
+  h3 {
+      font-size: 14px;
+      text-indent: 40px;
+    }
+    .choice-icon {
+      position: absolute;
+      left: 0;
+      width: 40px;
+      height: 17px;
+      background-image: url(/static/img/choice.png);
+      background-size: cover;
+    }
+}
+
+.choice-item {
+  padding: 15px 0;
+  font-size: 14px;
+  vertical-align: middle;
+  &.active {
+    color: $circle-color;
+    .ch-icon {
+      background: $circle-color;
+      color: #fff;
+    }
+  }
+  &:nth-child(2n-1) {
+    background: $pass-btn-color;
+  }
+  .ch-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    background: #fff;
+    border: 1px solid $border-color;
+    border-radius: 50%;
+    font-size: 13px;
+    text-align: center;
+    margin: 0 8px;
+  }
+}

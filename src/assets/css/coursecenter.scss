@@ -1,0 +1,19 @@
+@import "mixin";
+
+.category-wrap {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  top: 40px;
+  z-index: 4;
+}
+.course-box {
+  padding: 55px 8px 10px 15px;
+}
+  .course-item {
+    float: left;
+    width: 50%;
+    margin-bottom: 16px;
+    position: relative;
+    font-size: 10px;
+  }
